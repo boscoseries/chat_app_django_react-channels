@@ -1,13 +1,11 @@
 import React from 'react'
 
-
-const Chat = (props) => {
-
+const Search = ()  => {
   return (
     <div>
-      I got here
+
     </div>
   )
 }
 
-export default Chat
+export default Search

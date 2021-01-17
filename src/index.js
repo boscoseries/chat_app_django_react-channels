@@ -1,7 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import reportWebVitals from './reportWebVitals';
-import Chat from './pages/chat/Chat'
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
+import "./index.css";
+import Chat from "./pages/chat/Chat";
 
 ReactDOM.render(
 	<React.StrictMode>

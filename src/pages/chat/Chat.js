@@ -1,6 +1,8 @@
 import React from "react";
 import LetfHeader from "../../components/Header/Header";
-import Input from "../../components/Footer/Input";
+import Input from "../../components/Footer/ChatInput";
+import SearchBar from "../../components/Header/SearchBar";
+import NavFooter from "../../components/Footer/NavFooter";
 import addFileIcon from "../../assets/icons/addfile.png";
 
 import "./Chat.css";
@@ -10,7 +12,9 @@ const Chat = props => {
 		<div className="external-container">
 			<header>
 				<div className="header-container">
-					<div className="header-item-left">Header1</div>
+					<div className="header-item-left">
+						<SearchBar />
+					</div>
 					<div className="header-item-right">
 						<LetfHeader />
 					</div>
@@ -22,7 +26,9 @@ const Chat = props => {
 			</div>
 			<footer>
 				<div className="footer-container">
-					<div className="footer-item-left">Footer1</div>
+					<div className="footer-item-left">
+						<NavFooter />
+					</div>
 					<div className="footer-item-right">
 						<img src={addFileIcon} className="icons" alt="" />
 						<Input />

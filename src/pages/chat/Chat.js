@@ -1,45 +1,38 @@
 import React from "react";
-import LetfHeader from "../../components/Header/Header";
-import Input from "../../components/Footer/ChatInput";
+import RightHeader from "../../components/Header/Header";
 import SearchBar from "../../components/Header/SearchBar";
-import NavFooter from "../../components/Footer/NavFooter";
 import UserPanel from "../../components/Main/UsersPanel/UserPanel";
+import NavFooter from "../../components/Footer/NavFooter";
 import addFileIcon from "../../assets/icons/addfile.png";
+import ChatInput from "../../components/Footer/ChatInput";
+import { useStyles } from "./styles";
 
-import "./Chat.css";
+const Test = () => {
+	const classes = useStyles();
 
-const Chat = props => {
 	return (
-		<div className="external-container">
-			<header>
-				<div className="header-container">
-					<div className="header-item-left">
-						<SearchBar />
-					</div>
-					<div className="header-item-right">
-						<LetfHeader />
-					</div>
-				</div>
+		<div className={classes.testContainer}>
+			<header className={classes.header}>
+				<RightHeader />
 			</header>
-			<div className="main-container">
-				<nav>
-					<UserPanel />
-				</nav>
-				<main>Main</main>
-			</div>
-			<footer>
-				<div className="footer-container">
-					<div className="footer-item-left">
-						<NavFooter />
-					</div>
-					<div className="footer-item-right">
-						<img src={addFileIcon} className="icons" alt="" />
-						<Input />
-					</div>
+			<nav className={classes.nav}>
+				<div className="navHeader">
+					<SearchBar />
 				</div>
+				<div className="navMain">
+					<UserPanel />
+				</div>
+				<div className="navFooter">
+					<NavFooter />
+				</div>
+			</nav>
+			<main className={classes.main}>Main</main>
+			<footer className={classes.footer}>
+				<img src={addFileIcon} alt="" />
+				<ChatInput />
 			</footer>
 		</div>
 	);
 };
 
-export default Chat;
+export default Test;

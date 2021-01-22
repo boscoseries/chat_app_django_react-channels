@@ -1,8 +1,9 @@
 import React from "react";
 import LetfHeader from "../../components/Header/Header";
-import Input from "../../components/Footer/ChatInput";
 import SearchBar from "../../components/Header/SearchBar";
+import Input from "../../components/Footer/ChatInput";
 import NavFooter from "../../components/Footer/NavFooter";
+import UserPanel from "../../components/Main/UsersPanel/UserPanel";
 import addFileIcon from "../../assets/icons/addfile.png";
 
 import "./Chat.css";
@@ -21,7 +22,9 @@ const Chat = props => {
 				</div>
 			</header>
 			<div className="main-container">
-				<nav>Nav</nav>
+				<nav>
+					<UserPanel />
+				</nav>
 				<main>Main</main>
 			</div>
 			<footer>

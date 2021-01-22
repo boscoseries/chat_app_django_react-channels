@@ -22,9 +22,9 @@ const Header = () => {
 				<div>John</div>
 			</div>
 			<div className="left-icons">
-				<img className="icons" src={silenceIcon} />
-				<img className="icons" src={clockIcon} />
-				<img className="icons" src={deleteIcon} />
+				<img className="icons" src={silenceIcon} alt="" />
+				<img className="icons" src={clockIcon} alt="" />
+				<img className="icons" src={deleteIcon} alt="" />
 			</div>
 		</div>
 	);

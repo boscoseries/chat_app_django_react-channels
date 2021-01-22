@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import Chat from "./pages/chat/Chat";
+import Test from "./components/Test/Test";
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Chat />
+		<Router>
+			<Route path="/test" component={Test} exact />
+			<Route path="/" component={Chat} exact />
+		</Router>
 	</React.StrictMode>,
 	document.getElementById("root")
 );

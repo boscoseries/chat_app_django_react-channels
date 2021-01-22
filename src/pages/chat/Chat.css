@@ -15,8 +15,7 @@
 header,
 footer,
 .main-container {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 1 / 3;
 }
 
 main {
@@ -35,16 +34,14 @@ nav,
 .header-item-left,
 .footer-item-left {
   background: rgb(39, 41, 109);
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 1 / 2;
 }
 
 main,
 .header-item-right,
 .footer-item-right {
   background: rgba(239, 239, 239, 0.8);
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 2 / 3;
 }
 
 .footer-item-right {

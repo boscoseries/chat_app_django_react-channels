@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
 		flex: 1,
 		border: "1px solid grey",
 		borderLeft: "0px",
-		marginLeft: "0px",
+		// marginLeft: "0px",
 		color: "rgba(239, 239, 239, 1)",
 		backgroundColor: "rgba(56, 59, 121, 0.7)"
 	},

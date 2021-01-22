@@ -1,20 +1,29 @@
-.header {
+
+
+/* .header {
   display: flex;
   height: 100%;
   justify-content: space-between;
   align-items: center;
   color: rgb(109, 102, 105);
-}
+} */
 
-.active-user,
+/* .active-user,
 .left-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0.5em 0;
   width: 10em;
-}
+} */
 
-.profile-image {
+/* .profile-image {
   border-radius: 50%
-}
+} */
+
+/* .icons {
+  width: 20px;
+  height: 20px;
+} */
+
+

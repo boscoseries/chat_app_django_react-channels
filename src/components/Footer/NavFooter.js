@@ -7,11 +7,12 @@ import ArrowDropUpIcon from "@material-ui/icons/ArrowDropUp";
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		padding: " 0 2em 0 2em",
+		padding: "0 18px 0 18px",
 		display: "flex",
 		justifyContent: "space-between",
 		alignItems: "center",
-		height: "100%"
+		height: "100%",
+		width: "100%"
 	},
 	iconPhohe: {
 		display: "flex",

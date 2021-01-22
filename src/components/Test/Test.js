@@ -1,6 +1,10 @@
 import React from "react";
-import LetfHeader from "../Header/Header";
+import RightHeader from "../Header/Header";
 import SearchBar from "../Header/SearchBar";
+import UserPanel from "../../components/Main/UsersPanel/UserPanel";
+import NavFooter from "../../components/Footer/NavFooter";
+import addFileIcon from "../../assets/icons/addfile.png";
+import ChatInput from "../../components/Footer/ChatInput";
 import { useStyles } from "./testStyles";
 
 const Test = () => {
@@ -9,39 +13,23 @@ const Test = () => {
 	return (
 		<div className={classes.testContainer}>
 			<header className={classes.header}>
-				<h2>Header</h2>
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<br />
-				<p>Header</p>
+				<RightHeader />
 			</header>
 			<nav className={classes.nav}>
-				<div>
-					<div className="navHeader">Top</div>
-					<div>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero</div>
-					<div className="navFooter">Bottom</div>
+				<div className="navHeader">
+					<SearchBar />
+				</div>
+				<div className="navMain">
+					<UserPanel />
+				</div>
+				<div className="navFooter">
+					<NavFooter />
 				</div>
 			</nav>
-			<main className={classes.main}>
-				<p>
-					Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in
-					45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum
-					dolor sit amet..", comes from a line in section 1.10.32. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-					Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during
-					the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Lorem Ipsum comes from
-					sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a
-					treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
-					from a line in section 1.10.32.
-				</p>
-			</main>
+			<main className={classes.main}>Main</main>
 			<footer className={classes.footer}>
-				<h2>Footer</h2>
-				<br />
-				<p>Footer</p>
+				<img src={addFileIcon} alt="" />
+				<ChatInput />
 			</footer>
 		</div>
 	);

@@ -7,31 +7,27 @@ import SearchIcon from "@material-ui/icons/Search";
 
 const useStyles = makeStyles(theme => ({
 	root: {
-		padding: "2px 4px",
 		display: "flex",
 		alignItems: "center",
 		height: "100%",
-		backgroundColor: "transparent"
+		backgroundColor: "transparent",
+		boxShadow: "unset"
 	},
 	input: {
-		marginLeft: theme.spacing(1),
 		flex: 1,
-		border: "1px solid grey",
 		borderLeft: "0px",
-		// marginLeft: "0px",
-		color: "rgba(239, 239, 239, 1)",
-		backgroundColor: "rgba(56, 59, 121, 0.7)"
+		color: "rgba(239, 239, 239, 1)"
 	},
 	iconButton: {
-		border: "1px solid grey",
 		borderRight: "0px",
 		borderRadius: "0px",
 		padding: "4px",
-		color: "rgba(239, 239, 239, 0.5)",
-		backgroundColor: "rgba(56, 59, 121, 0.7)"
+		color: "rgba(239, 239, 239, 0.5)"
 	},
 	searchWrapper: {
 		margin: "auto",
+		width: "90%",
+		background: "rgb(56, 59, 121)"
 	}
 }));
 

@@ -11,11 +11,8 @@ export const useStyles = makeStyles(theme => ({
 	},
 	header: {
 		display: "None",
-		border: "2px solid grey",
-		overflow: "scroll",
 		position: "sticky",
 		top: 0,
-		background: "grey",
 		zIndex: 1,
 		[theme.breakpoints.up("sm")]: {
 			display: "inherit",
@@ -26,48 +23,47 @@ export const useStyles = makeStyles(theme => ({
 		}
 	},
 	nav: {
-		border: "1px solid blue",
 		height: "100vh",
-		"& div": {
-			display: "grid",
-			gridTemplateRows: "4em auto 4em",
-			height: "100%",
-			"& div": {
-				background: "red",
-				gridRowStart: 2,
-				gridRowEnd: 3,
-				overflow: "scroll"
-			},
-			"& .navHeader": {
-				background: "black",
-				gridRowStart: 1,
-				gridRowEnd: 2
-			},
-			"& .navFooter": {
-				background: "black",
-				gridRowStart: 3,
-				gridRowEnd: 4
-			}
+		display: "grid",
+		gridTemplateRows: "4em auto 4em",
+		background: "rgb(39, 41, 109)",
+		"& navMain": {
+			gridRowStart: 2,
+			gridRowEnd: 3,
+			overflow: "scroll",
+			padding: "2px"
+		},
+		"& .navHeader": {
+			gridRowStart: 1,
+			gridRowEnd: 2,
+			borderWidth: "0 0 2px 0",
+			borderStyle: "solid",
+			borderColor: "rgba(0, 0, 0, 0.2)"
+		},
+		"& .navFooter": {
+			gridRowStart: 3,
+			gridRowEnd: 4,
+			borderWidth: "2px 0 0 0",
+			borderStyle: "solid",
+			borderColor: "rgba(0, 0, 0, 0.2)"
 		},
 		[theme.breakpoints.up("sm")]: {
 			gridColumnStart: 1,
-			gridColumnEnd: 4,
+			gridColumnEnd: 2,
 			gridRowStart: 1,
-			gridRowEnd: 2,
+			gridRowEnd: 4,
+			gridTemplateColumns: "15em auto",
 			"& div": {
-				gridTemplateColumns: "15em auto",
-				// position: "fixed",
-				// width: "14em",
-				"& div": {
-					gridColumnStart: 1,
-					gridColumnEnd: 2
-				}
+				gridColumnStart: 1,
+				gridColumnEnd: 2
 			}
 		}
 	},
 	main: {
-		border: "1px solid violet",
 		display: "None",
+		borderWidth: "2px 0 2px 0",
+		borderStyle: "solid",
+		borderColor: "rgba(216, 206, 206, 0.6)",
 		[theme.breakpoints.up("sm")]: {
 			display: "inherit",
 			gridColumnStart: 2,
@@ -83,16 +79,20 @@ export const useStyles = makeStyles(theme => ({
 	},
 	footer: {
 		display: "None",
-		border: "2px solid orange",
-		overflow: "scroll",
 		position: "sticky",
 		bottom: "0",
-		background: "grey",
 		zIndex: 1,
+		"& img": {
+			width: "20px",
+			height: "20px"
+		},
 		[theme.breakpoints.up("sm")]: {
-			display: "inherit",
 			gridColumnStart: 2,
-			gridColumnEnd: 4
+			gridColumnEnd: 4,
+			display: "flex",
+			justifyContent: "center",
+			alignItems: "center",
+			margin: "0 20px 0 25px"
 		}
 	}
 }));
